@@ -65,11 +65,11 @@ public class CandidateController implements Print, Register, Save {
 
     // Returns the votes of each candidate
     public String getVotes() {
-        String votes = "\n";
+        StringBuilder votes = new StringBuilder("\n");
         for (Candidate candidate: candList ) {
-            votes += candidate.getName();
-            votes += " votes: " + candidate.getVotes() + ".\n";
+            votes.append(candidate.getName());
+            votes.append(" votes: ").append(candidate.getVotes()).append(".\n");
         }
-        return votes;
+        return votes.toString();
     }
 }

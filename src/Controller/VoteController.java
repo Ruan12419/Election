@@ -38,7 +38,7 @@ public class VoteController implements Print {
     }
 
     public void vote(int voters) {
-        // Do-whille loop to put the number of the candidate that each voter will vote for
+        // Do-while loop to put the number of the candidate that each voter will vote for
         do {
             print();
             System.out.print("Enter the number of your candidate: ");
