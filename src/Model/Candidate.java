@@ -1,8 +1,8 @@
 package Model;
 
 public class Candidate {
-    private String name;
-    private String party;
+    private final String name;
+    private final String party;
     private long votes;
 
     public Candidate(String name, String party) {
@@ -14,16 +14,9 @@ public class Candidate {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getParty() {
         return party;
-    }
-
-    public void setParty(String party) {
-        this.party = party;
     }
 
     public long getVotes() {
@@ -31,6 +24,6 @@ public class Candidate {
     }
 
     public void setVotes(long votes) {
-        this.votes = votes;
+        this.votes += votes;
     }
 }

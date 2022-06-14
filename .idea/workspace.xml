@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d322495-dbd4-4e66-8526-1f36a2342393" name="Changes" comment="Creation of Methods to register, save and print the Candidate">
+    <list default="true" id="8d322495-dbd4-4e66-8526-1f36a2342393" name="Changes" comment="Remove useless method, fix some typos, put new comments and use a 'do-while' loop">
+      <change afterPath="$PROJECT_DIR$/src/Controller/VoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CandidateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Candidate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,13 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654481075165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove useless method, fix some typos  and put new comments">
+      <created>1654484000012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654484000012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +93,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation of Methods to register, save and print the Candidate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of Methods to register, save and print the Candidate" />
+    <MESSAGE value="Remove useless method, fix some typos  and put new comments" />
+    <MESSAGE value="Remove useless method, fix some typos, put new comments and use a 'do-while' loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove useless method, fix some typos, put new comments and use a 'do-while' loop" />
   </component>
 </project>

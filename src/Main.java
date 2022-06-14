@@ -1,12 +1,14 @@
 import Controller.CandidateController;
+import Controller.VoteController;
 
 import java.util.Scanner;
 
 public class Main {
-
+    static int VOTERS;
     private static Scanner scan = new Scanner(System.in);
 
-    private static CandidateController candidate = new CandidateController();
+    private static final CandidateController candidate = new CandidateController();
+    private static final VoteController vote = new VoteController(candidate, candidate.getCandList());
 
     // Number of candidates can be passed as an argument to args
     public static void main(String[] args) {
@@ -34,12 +36,16 @@ public class Main {
 
 
         registerCandidate(numOfCand);
-
         candidate.print();
+
+        setVoters();
+        vote.vote(VOTERS);
+
+        System.out.println("Number of Votes: " + candidate.getVotes());
     }
 
 
-    // Will prompt you for the candidate's name and party and will save it to an List
+    // Will prompt you for the candidate's name and party and will save it to a List
     private static void registerCandidate(int numOfCand) {
         String name;
         String party;
@@ -61,4 +67,8 @@ public class Main {
         System.out.println();
     }
 
+    private static void setVoters() {
+        System.out.print("How many voters will this system have: ");
+        VOTERS = scan.nextInt();
+    }
 }
