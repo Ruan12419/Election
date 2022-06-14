@@ -4,6 +4,7 @@ import Controller.VoteController;
 import java.util.Scanner;
 
 public class Main {
+    // Number of voters (you can set as final and sign a fixed amount (and remove the 'setVoters' method))
     static int VOTERS;
     private static Scanner scan = new Scanner(System.in);
 
@@ -67,6 +68,7 @@ public class Main {
         System.out.println();
     }
 
+    // Sign the number of voters in the 'VOTERS' field
     private static void setVoters() {
         System.out.print("How many voters will this system have: ");
         VOTERS = scan.nextInt();
